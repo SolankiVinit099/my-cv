@@ -10,12 +10,25 @@
             text-align: center;
             font-size: 20px;
             background-color: aquamarine;
+            text-transform: uppercase;
         }
         label {
             font-size: 20px;
         }
         p {
             font-size: 20px;
+        }
+
+        #Full_Name {
+            text-transform: uppercase;
+        }
+
+        #phone {
+            text-transform: uppercase;
+        }
+
+        #Your_Massage {
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -33,16 +46,13 @@
 
     <form action="mailto:solankiv.j.099@gmail.com" method="post" enctype="text/plain" id="form">
         <label for="Full_Name"> Your Full Name: </label> <br>
-        <input type="text" placeholder="Enter Full name..." name="Full_Name" value="" autofocus required>
+        <input type="text" placeholder="Enter Full name..." name="Full_Name" value="" id="Full_Name" autofocus required>
         <br> <br> <br>
         <label for="phone">Enter a phone number:</label><br><br>
-        <input type="tel" name="phone" placeholder="0000000000" pattern="[0-9]{10}" required>
-        <br> <br> <br>
-        <label>E-mail : </label> <br>
-        <input type="email" name="Your_Email " value="" placeholder=" Enter E-mail..." required>
+        <input type="tel" name="phone" placeholder="0000000000" pattern="[0-9]{10}" id="phone" required>
         <br> <br> <br>
         <label for="massage">Your massage : </label><br>
-        <textarea name="Your_Massage " id="" cols="22" rows="5" placeholder="Your Massage....." required></textarea>
+        <textarea name="Your_Massage " id="Your_Massage" cols="22" rows="5" placeholder="Your Massage....." required></textarea>
         <br> <br> 
         <input type="submit" name="" value="Send Massage" class="submit">
         <br> <br>
